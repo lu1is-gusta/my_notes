@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class NotepadController extends Controller
+class NotepadController 
 {
     /**
      * Display a listing of the resource.
