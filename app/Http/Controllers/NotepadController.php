@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Notes;
 
 class NotepadController 
 {
@@ -13,7 +14,9 @@ class NotepadController
      */
     public function index()
     {
-        return view('notepad.index');
+        $notes = Notes::all();
+
+        return view('notepad.index', ['notes' => $notes]);
     }
 
     /**
